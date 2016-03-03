@@ -1,5 +1,11 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var Hello = require('./components/Hello.jsx');
+React = require('react');
+ReactDOM = require('react-dom');
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
+Portfolio = {Components: {}};
+Portfolio.Components.Page = require('./components/Page.jsx');
+
+(function (global) {
+  var {React, ReactDOM, Portfolio} = global;
+
+  ReactDOM.render(<Portfolio.Components.Page />, document.getElementById('root'));
+})(window);

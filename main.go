@@ -12,5 +12,10 @@ func main() {
 	pagesServer := http.FileServer(http.Dir("./views/"))
 	http.Handle("/", pagesServer)
 
-	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+
+	http.ListenAndServe(":"+port, nil)
 }
