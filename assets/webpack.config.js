@@ -1,14 +1,22 @@
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 module.exports = {
-  entry: './js/index.jsx',
+  entry: './index.js',
   output: {
-    path: '.',
-    filename: 'bundle.js',
+    path: 'builds',
+    filename: 'index.js',
   },
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      loaders: ['babel', 'jsx'],
+      loader: 'babel',
+      query: {
+        presets: ['es2015', 'react'],
+      },
       exclude: /node_modules/,
+    }, {
+      test: /\.scss$/,
+      loaders: ['style', 'css', 'sass'],
     }],
   },
 };
