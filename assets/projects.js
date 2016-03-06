@@ -1,16 +1,13 @@
-require('./stylesheets/index.scss');
+require('index.scss');
 
-window._ = require('lodash');
-window.React = require('react');
-window.ReactDOM = require('react-dom');
-window.Portfolio = {Components: {}};
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Projects from 'Projects.jsx';
 
-Portfolio.Projects = require('Projects.jsx');
 
-(function (global) {
-  var {React, ReactDOM, Portfolio} = global;
+(function () {
   ReactDOM.render(
-    React.createElement(Portfolio.Projects),
+    React.createElement(Projects),
     document.getElementById('root')
   );
-})(window);
+})();

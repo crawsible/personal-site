@@ -1,16 +1,11 @@
-require('./stylesheets/index.scss');
+require('index.scss');
 
-window._ = require('lodash');
-window.React = require('react');
-window.ReactDOM = require('react-dom');
-window.Portfolio = {Components: {}};
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Index from 'Index.jsx';
 
-Portfolio.Index = require('Index.jsx');
 
-(function (global) {
-  var {React, ReactDOM, Portfolio} = global;
-  ReactDOM.render(
-    React.createElement(Portfolio.Index),
-    document.getElementById('root')
-  );
-})(window);
+ReactDOM.render(
+  React.createElement(Index),
+  document.getElementById('root')
+);
