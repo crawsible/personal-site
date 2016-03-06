@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from 'components/Header.jsx';
+import Footer from 'components/Footer.jsx';
 
 
 export default React.createClass({
@@ -55,12 +56,7 @@ export default React.createClass({
             </li>
           </ul>
         </main>
-        <footer>
-          <small className="production-message">a COLIN "S" JACKSON production</small>
-          <small>
-            &copy; me. Absolutely zero rights reserved.
-          </small>
-        </footer>
+        <Footer />
       </div>
     );
   },

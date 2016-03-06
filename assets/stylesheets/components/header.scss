@@ -1,12 +1,13 @@
 @import "~variables.scss";
 
-header {
-  background: $purple;
+
+header.component {
   width: 100%;
   padding-bottom: calc(3rem + 2px);
 }
 
-header > .navigation {
+
+header.component > .navigation {
   position: relative;
   z-index: 2;
   border: solid $azure;
@@ -33,14 +34,14 @@ header > .navigation {
   }
 }
 
-header > .navigation.fixed {
+header.component > .navigation.fixed {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-header > .navigation > li > a {
+header.component > .navigation > li > a {
   display: block;
   padding: 0.875rem 0;
   letter-spacing: 0.2rem;
@@ -49,33 +50,20 @@ header > .navigation > li > a {
 }
 
 
-/* BREAKPOINT: 914px */
-
-@media (min-width: 914px) {
-  header {
-    padding-bottom: calc(3rem + 4px);
-  }
-
-  header > .navigation {
-    margin-bottom: calc(-3rem - 4px);
-  }
-}
-
-
-header > .social-media {
+header.component > .social-media {
   height: calc(4.5rem - 2px);
   border: solid $azure;
   border-width: 0 2px 2px 2px;
 }
 
-header > .social-media > li {
+header.component > .social-media > li {
   float: left;
   box-sizing: border-box;
   height: 100%;
   width: 33.33%;
 }
 
-header > .social-media > li > a {
+header.component > .social-media > li > a {
   display: block;
   box-sizing: border-box;
   height: 100%;
@@ -83,14 +71,26 @@ header > .social-media > li > a {
   padding: 0.5em 0;
 }
 
-header > .social-media > li > a > img {
+header.component > .social-media > li > a > img {
   height: 100%;
   width: auto;
   margin: 0 auto;
 }
 
-header > .social-media > li > a:hover {
+header.component > .social-media > li > a:hover {
   background: $magenta;
 }
 
 
+
+/* BREAKPOINT: screenlg */
+
+@media (min-width: $screenlg) {
+  header.component {
+    padding-bottom: calc(3rem + 4px);
+  }
+
+  header.component > .navigation {
+    margin-bottom: calc(-3rem - 4px);
+  }
+}

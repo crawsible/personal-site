@@ -48,11 +48,11 @@ module.exports = React.createClass({
 
   render() {
     return (
-      <header>
-        <ul className="navigation group">
+      <header className='component'>
+        <ul className='navigation group'>
           {map(this._navigationItems, this.renderTab)}
         </ul>
-        <ul className="social-media group">
+        <ul className='social-media group'>
           {map(this._socialMediaItems, this.renderSocialMedia)}
         </ul>
       </header>
