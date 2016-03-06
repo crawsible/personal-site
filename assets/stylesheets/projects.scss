@@ -1,0 +1,70 @@
+@import '~variables.scss';
+
+
+main > .projects-list {
+  margin: 2rem;
+}
+
+main > .projects-list > li {
+  margin-bottom: 2rem;
+}
+
+main > .projects-list > li > h2 {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 0.3rem 1rem;
+  margin-bottom: 0.3rem;
+  border-bottom: 2px solid $purple;
+}
+
+main > .projects-list > li > h2 > a {
+  display: block;
+  float: right;
+  position: relative;
+  top: -0.3rem;
+  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  color: $azure;
+  background: $purple;
+  border-radius: 3px;
+}
+
+main > .projects-list > li > h2 > a:hover {
+  background: $magenta;
+}
+
+main > .projects-list > li > .project-content {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+main > .projects-list > li > .project-content > img {
+  margin: 1rem 0;
+  border: 2px solid $magenta;
+  border-radius: 3px;
+}
+
+main > .projects-list > li > .project-content > p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/* BREAKPOINT: screenlg */
+
+@media (min-width: $screenlg) {
+  main > .projects-list {
+    box-sizing: border-box;
+  }
+
+  main > .projects-list > li {
+    float: left;
+    width: 47.5%;
+  }
+
+  main > .projects-list > li:nth-child(2n + 1) {
+    margin-right: 5%;
+  }
+}

@@ -21,5 +21,9 @@ footer.component > small.production-message {
   font-size: 0.875rem;
   font-weight: 900;
   margin-top: 0;
+}
+
+footer.component > small.production-message > em {
   letter-spacing: 0.33rem;
+  font-size: 1.25rem;
 }

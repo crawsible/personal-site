@@ -9,7 +9,7 @@ export default React.createClass({
   render() {
     return (
       <footer className='component'>
-        <small className='production-message'>a COLIN "S" JACKSON production</small>
+        <small className='production-message'>a<em> CRAWSIBLE</em> production</small>
         <small>
           &copy; me. Absolutely zero rights reserved.
         </small>

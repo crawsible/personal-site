@@ -1,3 +1,5 @@
+require('index.scss');
+
 import React from 'react';
 import Header from 'components/Header.jsx';
 import Footer from 'components/Footer.jsx';
@@ -24,6 +26,9 @@ export default React.createClass({
               </p>
               <p>
                 Thanks for stopping by!
+              </p>
+              <p>
+                &ndash;csj
               </p>
           </div>
         </main>
