@@ -20,4 +20,7 @@ module.exports = {
       loaders: ['style', 'css', 'sass'],
     }],
   },
+  resolve: {
+    modulesDirectories: ['node_modules', 'javascripts', 'stylesheets'],
+  },
 };

@@ -1,5 +1,6 @@
 @import "~normalize.css";
-@import "./_reset.scss";
+@import "~variables.scss";
+@import "reset.scss";
 @import url(https://fonts.googleapis.com/css?family=Lato:700,900);
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -9,11 +10,6 @@ DEFAULTS
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-
-$purple: #241960;
-$magenta: #bb2255;
-$azure: #e2eef7;
-
 
 html {
   font-size: 100%;
@@ -49,79 +45,6 @@ body {
 @media (min-width: 914px) {
   html {
     font-size: 150%;
-  }
-}
-
-
-
-/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-HEADER
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-
-header {
-  background: $purple;
-  width: 100%;
-  padding-bottom: calc(3rem + 2px);
-}
-
-header > .navigation {
-  position: relative;
-  z-index: 2;
-  border: solid $azure;
-  border-width: 0 0 2px 0;
-  margin-bottom: calc(-3rem - 2px);
-
-  > li {
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
-    background: $purple;
-  }
-
-  > :first-child {
-    border-right: 1px solid $azure;
-  }
-
-  > :last-child {
-    border-left: 1px solid $azure;
-  }
-
-  > .selected {
-    background: $magenta;
-  }
-}
-
-header > .navigation.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-header > .navigation > li > a {
-  display: block;
-  padding: 0.875rem 0;
-  letter-spacing: 0.2rem;
-  color: $azure;
-  text-align: center;
-}
-
-
-/* BREAKPOINT: 583px */
-
-/* BREAKPOINT: 914px */
-
-@media (min-width: 914px) {
-  header {
-    padding-bottom: calc(3rem + 4px);
-  }
-
-  header > .navigation {
-    margin-bottom: calc(-3rem - 4px);
   }
 }
 

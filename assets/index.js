@@ -1,10 +1,11 @@
 require('./stylesheets/index.scss');
 
+window._ = require('lodash');
 window.React = require('react');
 window.ReactDOM = require('react-dom');
-window.Portfolio = {};
+window.Portfolio = {Components: {}};
 
-Portfolio.Index = require('./javascripts/Index.jsx');
+Portfolio.Index = require('Index.jsx');
 
 (function (global) {
   var {React, ReactDOM, Portfolio} = global;
