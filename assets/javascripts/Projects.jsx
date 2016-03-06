@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from 'components/Header.jsx';
 
+
 export default React.createClass({
   displayName: 'Projects',
 
@@ -9,23 +10,6 @@ export default React.createClass({
       <div>
         <Header selected='projects' />
         <main>
-          <ul className="social-media group">
-            <li>
-              <a href="http://github.com/crawsible">
-                <img src="assets/images/github.png" alt="github" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/colinsjackson">
-                <img src="assets/images/linkedin.png" alt="linkedin" />
-              </a>
-            </li>
-            <li>
-              <a href="http://twitter.com/crawsible">
-                <img src="assets/images/twitter.png" alt="twitter" />
-              </a>
-            </li>
-          </ul>
           <ul className="projects-list group">
             <li>
               <h2 className="group">

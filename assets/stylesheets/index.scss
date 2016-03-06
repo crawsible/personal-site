@@ -50,6 +50,7 @@ body {
 
 
 
+
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -58,70 +59,9 @@ MAIN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
-
 main {
   padding-top: 0.1px;
 }
-
-main > .social-media {
-  height: calc(4.5rem - 2px);
-  border: solid $azure;
-  border-width: 0 2px 2px 2px;
-}
-
-main > .social-media > li {
-  float: left;
-  box-sizing: border-box;
-  height: 100%;
-  width: 33.33%;
-}
-
-main > .social-media > li > a {
-  display: block;
-  box-sizing: border-box;
-  height: 100%;
-  border-radius: 3px;
-  padding: 0.5em 0;
-}
-
-main > .social-media > li > a > img {
-  height: 100%;
-  width: auto;
-  margin: 0 auto;
-}
-
-main > .social-media > li > a:hover {
-  background: $magenta;
-}
-
-
-/* BREAKPOINT: 914px */
-@media (min-width: 914px) {
-  main {
-    position: relative;
-  }
-
-  main > .social-media {
-    position: absolute;
-    top: 0.5rem;
-    right: 20px;
-    width: 25%;
-    height: 3rem;
-    margin: 0;
-    background: $azure;
-    border-radius: 3px;
-  }
-
-  main > .social-media > li > a {
-    border-radius: 3px;
-    padding: 0.5rem;
-  }
-
-  main > h1 {
-    margin-top: 0;
-  }
-}
-
 
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
