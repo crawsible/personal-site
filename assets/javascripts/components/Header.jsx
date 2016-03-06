@@ -4,28 +4,11 @@ import React from 'react';
 import {map} from 'lodash';
 
 
-module.exports = React.createClass({
-  displayName: 'Header',
-  _navigationItems: [
-    {name: 'about', link: '/index.html'},
-    {name: 'projects', link: '/projects.html'},
-  ],
-  _socialMediaItems: [{
-    link: 'http://github.com/crawsible',
-    imgName: 'github.png',
-    alt: 'Github',
-  }, {
-    link: 'https://www.linkedin.com/in/colinsjackson',
-    imgName: 'linkedin.png',
-    alt: 'LinkedIn',
-  }, {
-    link: 'http://twitter.com/crawsible',
-    imgName: 'twitter.png',
-    alt: 'Twitter',
-  }],
+const NavigationItem = React.createClass({
+  render() {
+    const {name, link, selected} = this.props;
+    const isSelected = this.props.selected ? 'selected' : '';
 
-  renderTab({name, link}) {
-    var isSelected = this.props.selected === name ? 'selected' : '';
     return (
       <li
         key={name}
@@ -35,8 +18,12 @@ module.exports = React.createClass({
       </li>
     );
   },
+});
 
-  renderSocialMedia({link, imgName, alt}) {
+const SocialMediaItem = React.createClass({
+  render() {
+    const {link, imgName, alt} = this.props;
+
     return (
       <li key={alt}>
         <a href={link}>
@@ -45,15 +32,24 @@ module.exports = React.createClass({
       </li>
     );
   },
+});
+
+export default React.createClass({
+  displayName: 'Header',
 
   render() {
+    const {selected} = this.props;
+
     return (
       <header className='component'>
         <ul className='navigation group'>
-          {map(this._navigationItems, this.renderTab)}
+          <NavigationItem name='about' link='/index.html' selected={selected === 'about'} />
+          <NavigationItem name='projects' link='/projects.html' selected={selected === 'projects'} />
         </ul>
         <ul className='social-media group'>
-          {map(this._socialMediaItems, this.renderSocialMedia)}
+          <SocialMediaItem link='//github.com/crawsible' imgName='github.png' alt='Github' />
+          <SocialMediaItem link='//linkedin.com/in/colinsjackson' imgName='linkedin.png' alt='LinkedIn' />
+          <SocialMediaItem link='//twitter.com/crawsible' imgName='twitter.png' alt='Twitter' />
         </ul>
       </header>
     );
