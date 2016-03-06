@@ -9,8 +9,8 @@ func main() {
 	assetsServer := http.FileServer(http.Dir("./assets/"))
 	http.Handle("/assets/", http.StripPrefix("/assets/", assetsServer))
 
-	pagesServer := http.FileServer(http.Dir("./views/"))
-	http.Handle("/", pagesServer)
+	viewsServer := http.FileServer(http.Dir("./views/"))
+	http.Handle("/", viewsServer)
 
 	port := os.Getenv("PORT")
 	if port == "" {

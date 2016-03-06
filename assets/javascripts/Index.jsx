@@ -1,15 +1,14 @@
 module.exports = React.createClass({
-  displayName: 'Page',
+  displayName: 'Index',
   render() {
     return (
       <div>
         <header>
           <ul className="navigation group">
             <li className="selected"><a href="./index.html">about</a></li>
-            <li><a href="./portfolio.html">portfolio</a></li>
+            <li><a href="./projects.html">projects</a></li>
           </ul>
         </header>
-
         <main>
           <ul className="social-media group">
             <li>
@@ -28,7 +27,6 @@ module.exports = React.createClass({
               </a>
             </li>
           </ul>
-
           <div className="biography">
             <img className="my-photo" src='/assets/images/me.jpg' />
               <p>

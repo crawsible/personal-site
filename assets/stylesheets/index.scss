@@ -104,7 +104,7 @@ header > .navigation.fixed {
 
 header > .navigation > li > a {
   display: block;
-  padding: 0.75rem 0;
+  padding: 0.875rem 0;
   letter-spacing: 0.2rem;
   color: $azure;
   text-align: center;
@@ -113,32 +113,15 @@ header > .navigation > li > a {
 
 /* BREAKPOINT: 583px */
 
-@media
-(min-width: 583px) {
-  .header-content > p {
-    width: 75%;
-  }
-}
-
-
 /* BREAKPOINT: 914px */
 
 @media (min-width: 914px) {
-  .header-content > p {
-    width: 60%;
-    font-size: 1.625rem;
-  }
-
   header {
     padding-bottom: calc(3rem + 4px);
   }
 
   header > .navigation {
     margin-bottom: calc(-3rem - 4px);
-  }
-
-  header > .navigation > li > a {
-    padding: 0.75rem 0;
   }
 }
 
@@ -240,7 +223,7 @@ main > .biography > .my-photo {
   max-width: 250px;
   border: 2px solid $magenta;
   border-radius: 50%;
-  margin: 0.75rem;
+  margin: 0.875rem;
 }
 
 
@@ -272,6 +255,7 @@ main > .projects-list > li {
 main > .projects-list > li > h2 {
   display: block;
   font-size: 1.5rem;
+  font-weight: 900;
   padding: 0.3rem 1rem;
   margin-bottom: 0.3rem;
   border-bottom: 2px solid $purple;
@@ -306,6 +290,7 @@ main > .projects-list > li > .project-content > img {
 }
 
 main > .projects-list > li > .project-content > p {
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -354,7 +339,7 @@ footer > small {
 }
 
 footer > small.production-message {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 900;
   margin-top: 0;
   letter-spacing: 0.33rem;
