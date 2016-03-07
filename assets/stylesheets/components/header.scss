@@ -5,7 +5,6 @@ header.component {
   width: 100%;
 }
 
-
 header.component > .navigation {
   border: solid $azure;
   border-width: 0 0 2px 0;
@@ -17,18 +16,21 @@ header.component > .navigation {
   z-index: 2;
 
   > li {
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
     background: $purple;
+    border: 0 solid $azure;
+    border-width: 0 1px;
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
   }
 
   > :first-child {
-    border-right: 1px solid $azure;
+    border-left-width: 0;
   }
 
   > :last-child {
-    border-left: 1px solid $azure;
+    border-right-width: 0;
+    width: 33.34%;
   }
 
   > .selected {
@@ -51,6 +53,10 @@ header.component > .navigation > li > a {
 header.component > .navigation > li > a:hover {
   background: $magenta;
   color: $azure;
+}
+
+header.component > .navigation > li > a:active {
+  color: $purple;
 }
 
 

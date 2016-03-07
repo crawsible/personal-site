@@ -49,6 +49,7 @@ export default React.createClass({
         <ul className='navigation group'>
           <NavigationItem name='about' link='about' selected={selected === 'about'} />
           <NavigationItem name='projects' link='projects' selected={selected === 'projects'} />
+          <NavigationItem name='CV' link='cv' selected={selected === 'cv'} />
         </ul>
         <ul className='social-media group'>
           <SocialMediaItem link='//github.com/crawsible' imgName='github.png' alt='Github' />

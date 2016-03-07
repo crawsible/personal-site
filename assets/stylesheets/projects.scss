@@ -1,24 +1,32 @@
 @import '~variables.scss';
 
 
-main > .projects-list {
+main > .projects {
   margin: 2rem;
 }
 
-main > .projects-list > li {
+main > .projects > .intro > p {
+  font-size: 1.125rem;
+  margin: 1.25rem 0;
+}
+
+main > .projects > .intro > p > a {
+  color: $magenta;
+}
+
+main > .projects > .projects-list > li {
   margin-bottom: 2rem;
 }
 
-main > .projects-list > li > h2 {
+main > .projects > .projects-list > li > h2 {
   display: block;
   font-size: 1.5rem;
-  color: $magenta;
   padding: 0.3rem 1rem;
   margin-bottom: 0.3rem;
   border-bottom: 2px solid $magenta;
 }
 
-main > .projects-list > li > h2 > a {
+main > .projects > .projects-list > li > h2 > a {
   display: block;
   float: right;
   position: relative;
@@ -31,22 +39,22 @@ main > .projects-list > li > h2 > a {
   border-radius: 3px;
 }
 
-main > .projects-list > li > h2 > a:hover {
+main > .projects > .projects-list > li > h2 > a:hover {
   background: $magenta;
 }
 
-main > .projects-list > li > .project-content {
+main > .projects > .projects-list > li > .project-content {
   width: 80%;
   margin: 1rem auto;
 }
 
-main > .projects-list > li > .project-content > img {
+main > .projects > .projects-list > li > .project-content > img {
   margin: 1rem 0;
   border: 2px solid $magenta;
   border-radius: 3px;
 }
 
-main > .projects-list > li > .project-content > p {
+main > .projects > .projects-list > li > .project-content > p {
   font-size: 1rem;
   text-align: center;
 }
@@ -55,16 +63,16 @@ main > .projects-list > li > .project-content > p {
 /* BREAKPOINT: screenlg */
 
 @media (min-width: $screenlg) {
-  main > .projects-list {
+  main > .projects {
     box-sizing: border-box;
   }
 
-  main > .projects-list > li {
+  main > .projects > .projects-list > li {
     float: left;
     width: 47.5%;
   }
 
-  main > .projects-list > li:nth-child(2n + 1) {
+  main > .projects > .projects-list > li:nth-child(2n + 1) {
     margin-right: 5%;
   }
 }
