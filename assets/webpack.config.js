@@ -1,11 +1,8 @@
 module.exports = {
-  entry: {
-    index: './index.js',
-    projects: './projects.js',
-  },
+  entry: './app.jsx',
   output: {
     path: 'builds',
-    filename: '[name].js',
+    filename: 'app.js',
   },
   module: {
     loaders: [{

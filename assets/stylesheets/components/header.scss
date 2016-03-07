@@ -47,6 +47,10 @@ header.component > .navigation > li > a {
   text-align: center;
 }
 
+header.component > .navigation > li > a:hover {
+  background: $magenta;
+}
+
 
 header.component > .social-media {
   height: 5.25rem;
@@ -81,14 +85,27 @@ header.component > .social-media > li > a:hover {
 
 
 
+/* BREAKPOINT: screenmd */
+
+@media (min-width: $screenmd) {
+  header.component > .social-media {
+    height: 4.375rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+
+
 /* BREAKPOINT: screenlg */
 
 @media (min-width: $screenlg) {
-  header.component {
-    padding-bottom: calc(3rem + 4px);
+  header.component > .navigation > li > a {
+    padding: 0.625rem 0;
   }
 
-  header.component > .navigation {
-    margin-bottom: calc(-3rem - 4px);
+  header.component > .social-media {
+    height: 3.5rem;
+    width: 33%;
   }
 }

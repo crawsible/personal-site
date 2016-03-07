@@ -1,7 +1,7 @@
 require('components/header.scss');
 
 import React from 'react';
-import {map} from 'lodash';
+import {Link} from 'react-router';
 
 
 const NavigationItem = React.createClass({
@@ -14,7 +14,7 @@ const NavigationItem = React.createClass({
         key={name}
         className={[this.props.className, isSelected].join(' ')}
       >
-        <a href={link}>{name}</a>
+        <Link to={link}>{name}</Link>
       </li>
     );
   },
@@ -43,8 +43,8 @@ export default React.createClass({
     return (
       <header className='component'>
         <ul className='navigation group'>
-          <NavigationItem name='about' link='/index.html' selected={selected === 'about'} />
-          <NavigationItem name='projects' link='/projects.html' selected={selected === 'projects'} />
+          <NavigationItem name='about' link='about' selected={selected === 'about'} />
+          <NavigationItem name='projects' link='projects' selected={selected === 'projects'} />
         </ul>
         <ul className='social-media group'>
           <SocialMediaItem link='//github.com/crawsible' imgName='github.png' alt='Github' />
