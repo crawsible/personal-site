@@ -11,11 +11,15 @@ import Footer from 'components/Footer.jsx';
 
 
 const App = React.createClass({
+  _location() {
+    return this.props.location.pathname.replace(/^\//, '');
+  },
+
   render() {
     debugger;
     return (
       <div>
-        <Header selected='about' />
+        <Header selected={this._location()} />
         <main>
           {this.props.children}
         </main>

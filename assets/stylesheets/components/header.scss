@@ -7,10 +7,13 @@ header.component {
 
 
 header.component > .navigation {
-  position: relative;
-  z-index: 2;
   border: solid $azure;
   border-width: 0 0 2px 0;
+  color: $azure;
+  letter-spacing: 0.2rem;
+  position: relative;
+  text-align: center;
+  z-index: 2;
 
   > li {
     float: left;
@@ -28,7 +31,7 @@ header.component > .navigation {
   }
 
   > .selected {
-    background: $magenta;
+    color: $magenta;
   }
 }
 
@@ -42,13 +45,11 @@ header.component > .navigation.fixed {
 header.component > .navigation > li > a {
   display: block;
   padding: 0.875rem 0;
-  letter-spacing: 0.2rem;
-  color: $azure;
-  text-align: center;
 }
 
 header.component > .navigation > li > a:hover {
   background: $magenta;
+  color: $azure;
 }
 
 
