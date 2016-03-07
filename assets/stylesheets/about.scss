@@ -2,7 +2,8 @@
 
 
 main > .biography {
-  margin: 1.75rem 2rem 1.25rem 2rem;
+  margin: 2rem 2rem 1.25rem 2rem;
+  max-width: $screenlg;
 }
 
 main > .biography > p {
@@ -12,7 +13,7 @@ main > .biography > p {
 main > .biography > .my-photo {
   float: right;
   width: 33vw;
-  max-width: 250px;
+  max-width: 10rem;
   border: 2px solid $magenta;
   border-radius: 50%;
   margin: 0.875rem;
@@ -55,6 +56,10 @@ main > .biography > p.sign-off:before {
 /* BREAKPOINT: screenlg */
 
 @media (min-width: $screenlg) {
+  main > .biography {
+    margin: 2rem auto 1.25rem auto;
+  }
+
   main > .biography > p.enthusiastic-greeting {
     text-align: left;
     padding-left: 1.75rem;

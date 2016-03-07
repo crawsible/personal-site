@@ -1,0 +1,35 @@
+@import '~variables.scss';
+
+
+main > .not-found {
+  margin: 2rem;
+  max-width: $screenlg;
+}
+
+main > .not-found > h1 {
+  color: $magenta;
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+main > .not-found > p {
+  margin-bottom: 1.25rem;
+}
+
+main > .not-found > img {
+  width: 50%;
+  margin: 0.875rem auto;
+}
+
+
+
+/* BREAKPOINT: screenlg */
+
+@media (min-width: $screenlg) {
+  main > .not-found {
+    margin: 2rem auto;
+  }
+}

@@ -5,7 +5,7 @@ import { Router, Route, IndexRedirect, browserHistory } from 'react-router';
 import { render } from 'react-dom';
 
 import { Header, Footer } from 'components';
-import { About, Projects } from 'pages';
+import { About, Projects, NotFound } from 'pages';
 
 
 const App = React.createClass({
@@ -32,6 +32,7 @@ render((
       <IndexRedirect to='about' />
       <Route path='about' component={About} />
       <Route path='projects' component={Projects} />
+      <Route path='*' component={NotFound} />
     </Route>
   </Router>
 ), document.getElementById('root'));
