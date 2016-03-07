@@ -1,0 +1,7 @@
+---
+applications:
+- name: portfolio
+  memory: 512M
+  domain: cojackson
+  buildpack: binary_buildpack
+  command: ./portfolio
