@@ -14,7 +14,7 @@ const NavigationItem = React.createClass({
         key={name}
         className={[this.props.className, isSelected].join(' ')}
       >
-        <Link to={link}>{name}</Link>
+        <Link to={link}>{name.toUpperCase()}</Link>
       </li>
     );
   },

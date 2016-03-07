@@ -10,7 +10,8 @@ header.component > .navigation {
   border: solid $azure;
   border-width: 0 0 2px 0;
   color: $azure;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.125rem;
+  font-size: 1rem;
   position: relative;
   text-align: center;
   z-index: 2;

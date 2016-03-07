@@ -1,13 +1,11 @@
 require('base.scss');
 
 import React from 'react';
-import { Router, Route, IndexRedirect, browserHistory } from 'react-router'
-import {render} from 'react-dom'
+import { Router, Route, IndexRedirect, browserHistory } from 'react-router';
+import {render} from 'react-dom';
 
-import Index from 'Index.jsx';
-import Projects from 'Projects.jsx';
-import Header from 'components/Header.jsx';
-import Footer from 'components/Footer.jsx';
+import { Header, Footer } from 'components';
+import { Index, Projects } from 'pages';
 
 
 const App = React.createClass({
@@ -16,7 +14,6 @@ const App = React.createClass({
   },
 
   render() {
-    debugger;
     return (
       <div>
         <Header selected={this._location()} />
