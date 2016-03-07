@@ -1,0 +1,96 @@
+@import '~variables.scss';
+
+
+main > .cv {
+  margin: 2rem 0.5rem;
+  max-width: $screenlg;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+/* BREAKPOINT: screenmd */
+@media (min-width: $screenmd) {
+  main > .cv {
+    margin: 2rem;
+  }
+}
+
+/* BREAKPOINT: screenlg */
+@media (min-width: $screenlg) {
+  main > .cv {
+    margin: 2rem auto;
+  }
+}
+
+main > .cv > h1 {
+  color: $magenta;
+  font-size:  1.75rem;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1.75rem;
+  margin: 1.75rem;
+  text-align: center;
+}
+
+main > .cv > div {
+  margin: 1.75rem 0;
+}
+
+main > .cv > div > h2 {
+  border-bottom: solid 2px $magenta;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.875rem;
+  padding-bottom: 0.25rem;
+  text-align: center;
+}
+
+main > .cv > div > ul > li {
+  margin: 1.75rem 0 0.875rem 0;
+}
+
+main > .cv > div > ul > li > h3 {
+  font-size: 1.0625rem;
+  font-weight: 900;
+  line-height: 1.125rem;
+  text-align: center;
+}
+
+main > .cv > div.experience > ul > li > h3 > .org {
+  font-style: italic;
+  white-space: nowrap;
+}
+
+main > .cv > div.education > ul > li > h3 > .location {
+  font-weight: 700;
+}
+
+main > .cv > div > ul > li > h4 {
+  font-size: 0.875rem;
+  margin-bottom: 0.625rem;
+  text-align: center;
+}
+
+main > .cv > div > ul > li > ul {
+  margin-left: 0.875rem;
+}
+
+main > .cv > div > ul > li > ul > li {
+  margin: 0.5rem 0;
+}
+
+main > .cv > div > ul > li > ul > li > a {
+  color: $magenta;
+}
+
+
+main > .cv > div.technologies > ul > li > ul > li {
+  background-color: $magenta;
+  border-radius: 3px;
+  color: $azure;
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.125rem 0.25rem;
+}
+
