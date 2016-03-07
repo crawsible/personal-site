@@ -12,10 +12,10 @@ main > .projects-list > li {
 main > .projects-list > li > h2 {
   display: block;
   font-size: 1.5rem;
-  font-weight: 900;
+  color: $magenta;
   padding: 0.3rem 1rem;
   margin-bottom: 0.3rem;
-  border-bottom: 2px solid $purple;
+  border-bottom: 2px solid $magenta;
 }
 
 main > .projects-list > li > h2 > a {

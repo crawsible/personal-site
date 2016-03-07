@@ -2,7 +2,7 @@
 
 
 main > .biography {
-  margin: 0.75rem 2rem 1.25rem 2rem;;
+  margin: 1.75rem 2rem 1.25rem 2rem;
 }
 
 main > .biography > p {
@@ -18,11 +18,45 @@ main > .biography > .my-photo {
   margin: 0.875rem;
 }
 
+main > .biography > p.enthusiastic-greeting {
+  color: $magenta;
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 900;
+  padding-top: 0.875rem;
+  text-align: center;
+}
+
+main > .biography > p > a {
+  color: $magenta;
+}
+
+main > .biography > p > a:hover {
+  text-decoration: underline dotted $purple;
+}
+
+main > .biography > p.sign-off:before {
+  color: $magenta;
+  content: '\2014';
+  padding-left: 0.25rem;
+}
+
+
+/* BREAKPOINT: screenmd */
+
+@media (min-width: $screenmd) {
+  main > .biography > p.enthusiastic-greeting {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.75rem;
+  }
+}
 
 /* BREAKPOINT: screenlg */
 
 @media (min-width: $screenlg) {
-  main > .biography {
-    margin: 0 3rem;
+  main > .biography > p.enthusiastic-greeting {
+    text-align: left;
+    padding-left: 1.75rem;
   }
 }
