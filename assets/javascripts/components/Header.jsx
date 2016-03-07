@@ -5,6 +5,8 @@ import { Link } from 'react-router';
 
 
 const NavigationItem = React.createClass({
+  displayName: 'NavigationItem',
+
   render() {
     const {name, link, selected} = this.props;
     const isSelected = this.props.selected ? 'selected' : '';
@@ -21,6 +23,8 @@ const NavigationItem = React.createClass({
 });
 
 const SocialMediaItem = React.createClass({
+  displayName: 'SocialMediaItem',
+
   render() {
     const {link, imgName, alt} = this.props;
 
