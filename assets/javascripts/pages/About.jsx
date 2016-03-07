@@ -1,10 +1,10 @@
-require('index.scss');
+require('about.scss');
 
 import React from 'react';
 
 
 export default React.createClass({
-  displayName: 'Index',
+  displayName: 'About',
 
   render() {
     return (

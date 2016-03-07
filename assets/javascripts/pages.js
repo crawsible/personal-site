@@ -1,4 +1,4 @@
-import Index from 'pages/Index.jsx';
+import About from 'pages/About.jsx';
 import Projects from 'pages/Projects.jsx';
 
-export { Index, Projects };
+export { About, Projects };
