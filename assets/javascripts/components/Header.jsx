@@ -1,7 +1,7 @@
 require('components/header.scss');
 
 import React from 'react';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
 
 
 const NavigationItem = React.createClass({

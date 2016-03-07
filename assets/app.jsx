@@ -2,7 +2,7 @@ require('base.scss');
 
 import React from 'react';
 import { Router, Route, IndexRedirect, browserHistory } from 'react-router';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
 
 import { Header, Footer } from 'components';
 import { Index, Projects } from 'pages';
