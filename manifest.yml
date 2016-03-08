@@ -2,6 +2,7 @@
 applications:
 - name: portfolio
   memory: 512M
-  domain: cojackson
+  host: cojackson
+  domain: cfapps.io
   buildpack: binary_buildpack
   command: ./portfolio
