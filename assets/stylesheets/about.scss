@@ -33,7 +33,7 @@ main > .biography > p > a {
 }
 
 main > .biography > p > a:hover {
-  text-decoration: underline dotted $purple;
+  border-bottom: 1px dotted $purple;
 }
 
 main > .biography > p.sign-off:before {

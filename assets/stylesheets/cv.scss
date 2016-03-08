@@ -87,10 +87,11 @@ main > .cv > div > ul > li > ul > li > a {
 
 main > .cv > div.technologies > ul > li > ul > li {
   background-color: $magenta;
-  border-radius: 3px;
+  border-radius: 1.125rem;
+  box-shadow: 2px 3px 0 $purple;
   color: $azure;
   display: inline-block;
   margin: 0.25rem;
-  padding: 0.125rem 0.25rem;
+  padding: 0.125rem 0.5rem;
 }
 
