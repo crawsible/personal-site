@@ -11,7 +11,10 @@ header.component > .navigation {
   color: $azure;
   letter-spacing: 0.125rem;
   font-size: 1rem;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
   z-index: 2;
 
@@ -38,13 +41,6 @@ header.component > .navigation {
   }
 }
 
-header.component > .navigation.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
 header.component > .navigation > li > a {
   display: block;
   padding: 0.875rem 0;
@@ -61,9 +57,10 @@ header.component > .navigation > li > a:active {
 
 
 header.component > .social-media {
-  height: 5.25rem;
   border: solid $azure;
   border-width: 0 2px 2px 2px;
+  height: 5.25rem;
+  padding-top: 3.25rem;
 }
 
 header.component > .social-media > li {
