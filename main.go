@@ -12,6 +12,9 @@ func main() {
 	assetsServer := http.FileServer(http.Dir("./assets/"))
 	http.Handle("/assets/", http.StripPrefix("/assets/", assetsServer))
 
+	proofServer := http.FileServer(http.Dir("./.well-known/"))
+	http.Handle("/.well-known/", http.StripPrefix("/.well-known/", proofServer))
+
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write(appHTML)
 	})

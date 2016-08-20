@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/crawsible
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://crawsible.tech
+  * I am crawsible (https://keybase.io/crawsible) on keybase.
+  * I have a public key ASDUhGG8taQm7l0cHmaO2BI-aaIkj_5umEs7usIFNfC0-wo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120d48461bcb5a426ee5d1c1e668ed8123e69a2248ffe6e984b3bbac20535f0b4fb0a",
+            "host": "keybase.io",
+            "kid": "0120d48461bcb5a426ee5d1c1e668ed8123e69a2248ffe6e984b3bbac20535f0b4fb0a",
+            "uid": "4872d5644a9e736d061aa242d7269b19",
+            "username": "crawsible"
+        },
+        "service": {
+            "hostname": "crawsible.tech",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.16"
+    },
+    "ctime": 1471671701,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1471671686,
+        "hash": "4a39748ba0e9717f18ca4caf27f8f852255e95e7b780195451b3aeadbff140340020b2d7b98b3f1cfbde76039cf52b8821044ead0dc6de12345cf3f255bf0e9b",
+        "seqno": 591737
+    },
+    "prev": "46b14bd987d4f9e67c77e6362c729f5b08fa47bbfed2d69f4430d8eb248a098b",
+    "seqno": 15,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1IRhvLWkJu5dHB5mjtgSPmmiJI/+bphLO7rCBTXwtPsKp3BheWxvYWTFAvd7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZDQ4NDYxYmNiNWE0MjZlZTVkMWMxZTY2OGVkODEyM2U2OWEyMjQ4ZmZlNmU5ODRiM2JiYWMyMDUzNWYwYjRmYjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZDQ4NDYxYmNiNWE0MjZlZTVkMWMxZTY2OGVkODEyM2U2OWEyMjQ4ZmZlNmU5ODRiM2JiYWMyMDUzNWYwYjRmYjBhIiwidWlkIjoiNDg3MmQ1NjQ0YTllNzM2ZDA2MWFhMjQyZDcyNjliMTkiLCJ1c2VybmFtZSI6ImNyYXdzaWJsZSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiY3Jhd3NpYmxlLnRlY2giLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE2In0sImN0aW1lIjoxNDcxNjcxNzAxLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NzE2NzE2ODYsImhhc2giOiI0YTM5NzQ4YmEwZTk3MTdmMThjYTRjYWYyN2Y4Zjg1MjI1NWU5NWU3Yjc4MDE5NTQ1MWIzYWVhZGJmZjE0MDM0MDAyMGIyZDdiOThiM2YxY2ZiZGU3NjAzOWNmNTJiODgyMTA0NGVhZDBkYzZkZTEyMzQ1Y2YzZjI1NWJmMGU5YiIsInNlcW5vIjo1OTE3Mzd9LCJwcmV2IjoiNDZiMTRiZDk4N2Q0ZjllNjdjNzdlNjM2MmM3MjlmNWIwOGZhNDdiYmZlZDJkNjlmNDQzMGQ4ZWIyNDhhMDk4YiIsInNlcW5vIjoxNSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxECeygiH2dBxDaBfTxEjjU9D8XQmrzTjKjnL2lAd308QnV23jLsVetUFZ0Y5vZQrpZujcmYnc4YUNIqpkcszcGwIqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgtry8A23dym1/IQC8Yl3dL0lvPuZRRW9Y+BO8xNPKRh+jdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/crawsible
+
+==================================================================
